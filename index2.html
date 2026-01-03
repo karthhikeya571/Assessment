@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+</head>
+<style>
+    
+    body {
+    background: linear-gradient(135deg, rgb(68, 209, 68) , skyblue);
+    color: #0c0101;
+    transition: 0.3s;
+    }
+    body.dark {
+        background-color: #111;
+        color: #f4f4f4;
+    }
+    header h1 {
+    color: chartreuse;
+    }
+    header {
+        background: #0b7697;
+        top: 0;
+        padding: 10px 20px;
+    }
+    header {
+    position: sticky;
+    top: 0;
+    background : #111111;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    }
+    .toggle-btn {
+    padding: 10px 15px;
+    background: #bee60d;
+    border: none;
+    border-radius: 50px;
+    font-weight: bolder;
+    top: 20px;
+    position: absolute;
+    left: 1250px;
+    }
+    section {
+        font-size: 20px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Welcome to my Projects</h1>
+        <button class="toggle-btn" onclick="toggleMode()">Dark</button>
+    </header>
+     <section>
+        <ol>
+            <li><b>ChechAccess</b></li>
+            <p>CheckAccess is a client-side access control feature developed using HTML, CSS, and JavaScript that verifies user permissions before granting access to specific content or actions on a web page. 
+                The user interface is built with HTML, styled using CSS for clarity and responsiveness, 
+                and JavaScript is used to validate user roles or credentials and dynamically allow or restrict access without reloading the page.</p>
+                <h4>Link : <a href="https://check-access-kappa.vercel.app/">https://check-access-kappa.vercel.app/</a></h4>
+            <li><b>CheckGrade</b></li>
+            <p>CheckGrade is a web-based grade evaluation feature developed using HTML, CSS, and JavaScript that allows users to enter student marks and instantly calculates the corresponding grade. 
+                The interface is built with HTML for structure, styled using CSS for a clean and responsive design, and powered by JavaScript to handle logic, 
+                validation, and dynamic result display without page reloads.</p>
+            <h4>Link : <a href="https://calculation-ivory.vercel.app/">https://calculation-ivory.vercel.app/</a></h4>
+    
+            <li><b>Quiz-App</b></li>
+            <p>Built an interactive quiz platform with real-time score calculation and a clean UI.
+Implemented dynamic question loading and timer functionality to improve engagement.
+Reduced response lag by optimizing DOM rendering using efficient JS functions.</p>
+                <h4>Link : <a href="https://quiz-app-one-rust-87.vercel.app/">https://quiz-app-one-rust-87.vercel.app/</a></h4>
+            <li><b>Memory Card Game</b></li>
+            <p>Developed a visual memory card-matching game with randomized card shuffling.
+Improved user experience by adding smooth animations and responsive design.
+Ensured optimized game performance by reducing unnecessary reflows & repaints</p>
+           <h4>Link : <a href="https://menory-card-game.vercel.app/">https://menory-card-game.vercel.app/</a></h4>
+
+        </ol>
+        </section>
+
+    <script src="portofolio.js"></script>
+</body>
+</html>
