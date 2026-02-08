@@ -1,85 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portfolio</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>MyPortfolio</h1>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#hobbies">Hobbies</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <a class="link1" href="https://www.linkedin.com/in/karthik-madivili-a61006294">
-                <b>Linkedin</b></a></p>
-            <a class="link2" href="https://github.com/karthhikeya571"><b>GitHub</b></a>
-            <button class="toggle-btn" onclick="toggleMode()">Dark</button>
-        </header>
-    
-        <section class="hero">
-            <img src="./images/profile.jpg" width="300" height="400" alt="Profile Image">
-          
-            <h2>Hello, I'm Kartheek 👋</h2>
-            <p>Frontend Developer | UI Enthusiast | Creative Thinker</p>
-            <p class="language">TELUGU | ENGLISH</p>
-          
-            <a href="./resume/resume.pdf" download class="resume-btn">
-                Download Resume
-              </a>
-            <button onclick="openPage()">
-                Projects
-            </button>
-          </section>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>MyPortfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a class="link1" href="https://www.linkedin.com/in/karthik-madivili-a61006294">
+            <b>Linkedin</b></a>
+        <a class="link2" href="https://github.com/karthhikeya571"><b>GitHub</b></a>
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" onclick="toggleMode()">
+            <div class="slider round">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </label>
+    </header>
+
+    <section class="hero">
+        <img src="./images/profile.jpg" width="300" height="400" alt="Profile Image">
+
+        <h2>Hello, I'm Kartheek 👋</h2>
+        <p>Frontend Developer | UI Enthusiast | Full Stack Developer</p>
+        <p class="language">TELUGU | ENGLISH</p>
+
+        <a href="./resume/resume.pdf" download class="resume-btn">
+            Download Resume
+        </a>
+        <a href="#projects" class="projects-btn">
+            Projects
+        </a>
+    </section>
     <section id="about">
-            <h3>About Me</h3>
-            <div class="about">
-                <p>I am a passionate frontend developer who loves building clean,
-                    interactive, and responsive web interfaces. I enjoy turning ideas
-                    into reality using code.
+        <h3>About Me</h3>
+        <div class="about">
+            <div class="about-content">
+                <p>Motivated and detail-oriented <strong>Software Development Engineer (SDE-1)</strong> aspirant
+                    with hands-on experience in
+                    <strong>Java, Spring Boot, MySQL, HTML, CSS, and JavaScript</strong>. Currently pursuing a B.Tech in
+                    Computer Science
+                    (2026) with a strong foundation in data structures, software development life cycle (SDLC), and
+                    problem-solving.
                 </p>
+                <div class="experience-highlight">
+                    <p>During my internship at <strong>KodNest Technologies</strong>, I gained practical experience in
+                        backend
+                        development,
+                        frontend integration, manual testing, and real-world project development. I actively contributed
+                        to
+                        building secure and scalable applications under industry mentorship.</p>
+                </div>
+
+                <p>I have worked on projects like:</p>
+
+
+                <p>I am passionate about building intelligent, secure, and scalable software solutions. I thrive in
+                    collaborative environments and continuously seek opportunities to learn, grow, and contribute to
+                    impactful projects.</p>
             </div>
-        </section>
-    
-        <section id="skills">
-            <h3>Skills</h3>
-            <div class="skills">
-                <div class="skill-box">HTML</div>
-                <div class="skill-box">CSS</div>
-                <div class="skill-box">JavaScript</div>
-                <div class="skill-box">Java</div>
-                <div class="skill-box">SQL</div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3>Skills</h3>
+        <div class="skills">
+            <div class="skill-box"><i class="fa-brands fa-html5"></i> HTML</div>
+            <div class="skill-box"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+            <div class="skill-box"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
+            <div class="skill-box"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill-box"><i class="fa-brands fa-java"></i> Java</div>
+            <div class="skill-box"><i class="fa-solid fa-leaf"></i> Spring Boot</div>
+            <div class="skill-box"><i class="fa-solid fa-database"></i> SQL</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h3>Projects</h3>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h4>CheckAccess</h4>
+                <p>CheckAccess is a client-side access control feature developed using HTML, CSS, Bootstrap and
+                    JavaScript that
+                    verifies user permissions before granting access to specific content or actions on a web page.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">Bootstrap</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <a href="https://check-access-kappa.vercel.app/" target="_blank">View Project</a>
             </div>
-        </section>
-    
-        <section id="hobbies">
-            <h3>Hobbies</h3>
-            <div class="hobbies">
-                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
-                <img src="https://goqii.com/blog/wp-content/uploads/6-Health-Benefits-of-Playing-Sports-1024x683.jpg">
-                <img src="https://images.unsplash.com/photo-1498579809087-ef1e558fd1da">
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
-                <h4>Upgarde-Myself</h4>
-                <h4>Playing-Sports</h4>
+            <div class="project-card">
+                <h4>CheckGrade</h4>
+                <p>CheckGrade is a web-based grade evaluation feature developed using HTML, CSS, and JavaScript that
+                    allows users to enter student marks and instantly calculates the corresponding grade.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <a href="https://calculation-ivory.vercel.app/" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h4>Quiz-App</h4>
+                <p>Built an interactive quiz platform with real-time score calculation and a clean UI. Implemented
+                    dynamic question loading and timer functionality to improve engagement.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <a href="https://quiz-app-one-rust-87.vercel.app/" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h4>Memory Card Game</h4>
+                <p>Developed a visual memory card-matching game with randomized card shuffling. Improved user experience
+                    by adding smooth animations and responsive design.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <a href="https://menory-card-game.vercel.app/" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section id="Achievements">
+        <h3>Achievements</h3>
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <div class="icon-box"><i class="fa-solid fa-certificate"></i></div>
+                <div class="content-box">
+                    <div class="achievement-name">Full Stack Developer</div>
+                    <div class="achievement-org">KodNest Technologies</div>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="icon-box"><i class="fa-solid fa-certificate"></i></div>
+                <div class="content-box">
+                    <div class="achievement-name">Full Stack-Java</div>
+                    <div class="achievement-org">SkillDzire Technologies</div>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="content-box">
+                    <div class="achievement-name">Web Development Intern</div>
+                    <div class="achievement-org">Cognifyz Technologies</div>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                <div class="content-box">
+                    <div class="achievement-name">Frontend Development</div>
+                    <div class="achievement-org">Virtunexa</div>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="icon-box"><i class="fa-brands fa-java"></i></div>
+                <div class="content-box">
+                    <div class="achievement-name">Java Fundamentals</div>
+                    <div class="achievement-org">Coursera</div>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <div class="icon-box"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="content-box">
+                    <div class="achievement-name">Application Developer</div>
+                    <div class="achievement-org">Rooman Technologies PVT.LTD</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="hobbies">
+        <h3>Hobbies</h3>
+        <div class="hobbies">
+            <div class="hobby-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Coding">
+                <h4>Upgrade Myself</h4>
+            </div>
+            <div class="hobby-card">
+                <img src="https://goqii.com/blog/wp-content/uploads/6-Health-Benefits-of-Playing-Sports-1024x683.jpg"
+                    alt="Sports">
+                <h4>Playing Sports</h4>
+            </div>
+            <div class="hobby-card">
+                <img src="https://images.unsplash.com/photo-1498579809087-ef1e558fd1da" alt="Headphones">
+                <h4>Listening Music</h4>
+            </div>
+            <div class="hobby-card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Cooking">
                 <h4>Cooking</h4>
-                <h4>Listening music</h4>
             </div>
-        </section>
-    
-        <section id="contact">
-            <h3>Contact</h3>
-            <div class="contact">
-                <p><b>Email</b>:<a href="karthikkarthi5677@gmail.com">karthikkarthi5677@gmail.com</a></p>
-                <p><b>Phone Number</b>:<a href="+91 8919690614">+91 8919690614</a></p>
-        </section>
-    
-        <footer>
-          Kartheek's | Portfolio
-        </footer>
-        <script src="portofolio.js"></script>
-    </body>   
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3>Contact & Feedback</h3>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="fa-solid fa-envelope"></i> <b>Email</b>: <a
+                        href="mailto:karthikkarthi5677@gmail.com">karthikkarthi5677@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i> <b>Phone</b>: <a href="tel:+918919690614">+91 8919690614</a></p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/karthik-madivili-a61006294" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/karthhikeya571" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="feedback-form">
+                <h4>Send me a Message</h4>
+                <form>
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea rows="5" placeholder="Your Message / Feedback" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message <i
+                            class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Kartheek's | Portfolio
+    </footer>
+    <script src="portofolio.js"></script>
+</body>
+
 </html>
