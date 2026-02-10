@@ -5,10 +5,26 @@
     font-family: 'Poppins', sans-serif;
 }
 
+h1,
+h2,
+h3 {
+    text-decoration: underline;
+    font-style: italic;
+}
+
 body {
     background-color: #f4f4f4;
     color: #333;
     transition: 0.3s;
+}
+
+.top {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.hero h2 {
+    text-decoration: none;
 }
 
 body.dark {
@@ -161,6 +177,7 @@ body.dark .slider .fa-moon {
     object-fit: cover;
     border: 5px solid white;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    object-position: top;
 }
 
 .hero h2 {
